@@ -1,6 +1,8 @@
 <template>
   <v-app>
-    <HeaderComponent />
+    <!-- Only show header if not on the login page -->
+    <HeaderComponent v-if="showHeader" />
+    
     <v-main>
       <v-container fluid>
         <router-view />
@@ -17,9 +19,10 @@ export default {
   components: {
     HeaderComponent,
   },
+  computed: {
+    showHeader() {
+      return this.$route.name !== 'login' && this.$route.name !== 'UnAuthorized' && this.$route.name !== 'NotAllowed'; 
+    },
+  },
 };
 </script>
-
-<style>
-/* Global styles if needed */
-</style>

@@ -1,0 +1,133 @@
+:root {
+    --primary: #002349;
+    --secondary: #957C3D;
+    --background: #F8F8F9;
+    --accent: linear-gradient(135deg, #002349, #957C3D);
+    --white: #FFFFFF;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    background-color: var(--background);
+  }
+  
+  aside {
+    width: 260px;
+    background: var(--accent);
+    min-height: 100vh;
+    padding: 30px 20px;
+    color: white;
+  }
+  
+  aside h1 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  aside nav a {
+    display: block;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    color: #f8f8f8;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  aside nav a:hover {
+    background-color: var(--white);
+    color: var(--secondary);
+    font-weight: bold;
+  }
+  
+  main {
+    flex: 1;
+    padding: 40px;
+    background-color: var(--background);
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: var(--secondary);
+    font-size: 26px;
+  }
+  
+  form {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    margin-bottom: 40px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  input,
+  select,
+  button,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  button {
+    background: var(--accent);
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+  
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--primary);
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  .success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #c3e6cb;
+  }
