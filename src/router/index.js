@@ -10,6 +10,13 @@ import NotAllowed from '@/components/NotAllowedComponent.vue';
 import AddEmployee from '@/View/Admin/AddEmployee.vue';
 import AddTrainer from '@/View/Admin/AddTrainer.vue';
 import AssignCourse from '@/View/Admin/AssignCourse.vue';
+import CourseDetails from '@/View/Employee/CourseDetails.vue';
+import QuizBasics from '@/View/Employee/QuizBasics.vue';
+import EmployeeDiscussion from '@/View/Employee/EmployeeDiscussion.vue';
+import EmployeeQuery from '@/View/Employee/EmployeeQuery.vue';
+import EmployeeComplaint from '@/View/Employee/EmployeeComplaint.vue';
+import EmployeeProfile from '@/View/Employee/EmployeeProfile.vue';
+
 
 Vue.use(VueRouter);
 
@@ -71,6 +78,60 @@ const routes = [
     path: '/employee/dashboard',
     component: EmployeeDashboard,
     name: 'EmployeeDashboard',
+    meta: {
+      requiresAuth: true,
+      role: 'employee',
+    },
+  },
+  {
+    path: '/employee/course-details',
+    component: CourseDetails,
+    name: 'CourseDetails',
+    meta: {
+      requiresAuth: true,
+      role: 'employee',
+    },
+  },
+  {
+    path: '/employee/quiz',
+    component: QuizBasics,
+    name: 'QuizBasics',
+    meta: {
+      requiresAuth: true,
+      role: 'employee',
+    },
+  },
+  {
+    path: '/employee/discussion',
+    component: EmployeeDiscussion,
+    name: 'EmployeeDiscussion',
+    meta: {
+      requiresAuth: true,
+      role: 'employee',
+    },
+  },
+  {
+    path: '/employee/query',
+    component: EmployeeQuery,
+    name: 'EmployeeQuery',
+    meta: {
+      requiresAuth: true,
+      role: 'employee',
+    },
+  },
+  {
+    path: '/employee/complaint',
+    component: EmployeeComplaint,
+    name: 'EmployeeComplaint',
+    meta: {
+      requiresAuth: true,
+      role: 'employee',
+    },
+  },
+  {
+    path: '/employee/profile',
+    component: EmployeeProfile,
+    name: 'EmployeeProfile',
     meta: {
       requiresAuth: true,
       role: 'employee',

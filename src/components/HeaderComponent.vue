@@ -60,8 +60,13 @@ export default {
           { title: "Assign Course", icon: "mdi-account-tie", route: "/admin/assign-course" },
         ],
         employee: [
-          { title: "Tasks", icon: "mdi-clipboard-check", route: "/employee/tasks" },
-          { title: "Reports", icon: "mdi-file-document", route: "/employee/reports" },
+          { title: "Dashboard", icon: "mdi-view-dashboard", route: "/employee/dashboard" },
+          { title: "Course Details", icon: "mdi-book-open", route: "/employee/course-details" },
+          { title: "Profile", icon: "mdi-account", route: "/employee/profile" },
+          { title: "Quiz", icon: "mdi-quiz", route: "/employee/quiz" },
+          { title: "Discussion", icon: "mdi-forum", route: "/employee/discussion" },
+          { title: "Query", icon: "mdi-help-circle", route: "/employee/query" },
+          { title: "Complaint", icon: "mdi-alert-circle", route: "/employee/complaint" },
         ],
         trainer: [
           { title: "Training Schedule", icon: "mdi-calendar-clock", route: "/trainer/schedule" },

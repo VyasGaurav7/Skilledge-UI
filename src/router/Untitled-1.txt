@@ -1,0 +1,12 @@
+
+
+git checkout -b feature/newcommit
+
+git add .
+
+git commit -m 'added new commit'
+
+git push origin feature/newcommit
+
+
+
